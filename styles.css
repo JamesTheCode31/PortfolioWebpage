@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #eaf4ff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #3A7BD5;
+    padding: 15px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#navbar a {
+    color: #eef7ff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    color: #cfe7ff;
+}
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #3A7BD5, #6FB2FF);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: left;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+#profile-pic {
+    width: 500px;        
+    height: 500px;       
+    border-radius: 15px; 
+    object-fit: cover;
+    border: 5px solid #cfe7ff;
+}
+
+.welcome-text h1 {
+    font-size: 42px;
+    margin: 0 0 15px 0;
+}
+
+.welcome-text p {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#projects {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: #1a3c6e;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-left: 6px solid #3A7BD5;
+    transition: 0.3s ease;
+}
+
+.project-card h3 {
+    color: #1a3c6e;
+}
+
+.project-card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.project-tile {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 25px;
+    background: #3A7BD5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.project-tile:hover {
+    background: #2E69B3;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #3A7BD5;
+}
+
+footer a {
+    color: #eef7ff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
